@@ -1,0 +1,385 @@
+div.dataTables_wrapper div.dataTables_info{
+	display: none;
+}
+#example_previous{
+	color: slateblue;
+	background: slateblue;
+
+
+}
+
+.paginate_button {
+	background: slateblue;
+}
+
+#example_next{
+
+	color: slateblue;
+	background: slateblue;
+	width: 82px;
+	
+}
+
+
+
+
+#example_previous:after{
+	content: "Попередня";
+	visibility: visible;
+	position: absolute;
+	right: 10px;
+	color: #fff;
+
+}
+
+
+#example_next:after{
+	content: "Наступна";
+	visibility: visible;
+	position: absolute;
+	left: 10px;
+	color: #fff;
+
+
+}
+
+.ui.grid {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.ui.grid>.row {
+	padding-left: 0.3rem;
+	}
+
+#example_length{
+	margin-left: 1rem;
+}
+
+#example_filter{
+	margin-left: -3rem;
+}
+
+
+#example_length  label{
+	background: green;
+	content: "Показати";
+	visibility: hidden;
+
+}
+
+
+#example_length  label:before{
+	content: "Показати";
+	visibility: visible;
+	margin-right: -25px;
+
+}
+
+.dataTables_length .ui.selection.dropdown {
+    visibility: initial;
+}
+
+#example_length  label:after{
+	visibility: visible;
+	content: "записів";
+	margin-left: -35px;
+}
+
+#example_filter label{
+	visibility: hidden;
+
+}
+
+.dataTables_filter span.input {
+    visibility: initial;
+}
+
+
+#example_filter label:before{
+	content: "Пошук";
+	visibility: visible;
+	margin-right: -40px;
+}
+
+.ui.stackable.grid>div:nth-child(1){
+	position: sticky;
+	top: 0;
+	background: #fff;
+	z-index: 999;
+
+}
+
+.ui.stackable.grid>div:last-child{
+	position: sticky;
+	bottom: 0;
+	background: #fff;
+	z-index: 999;
+
+}
+
+#example thead>tr:nth-child(1) th{
+	position: sticky;
+    z-index: 9;
+    top: 66px;
+}
+
+#example{
+	width: 98%;
+}
+#example_paginate{
+	margin-right: 27px;
+}
+
+#example_wrapper{
+	overflow-x: clip;
+}
+
+table.dataTable.table>tbody>tr.even{
+	background-color: #f1eaff;
+}
+
+
+
+
+table.dataTable.table>tbody>tr:nth-child(2) td{
+	width: 500px;
+}
+
+
+.update-or-delete{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.update{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: slateblue;
+    cursor: pointer;
+
+}
+
+.delete{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: slateblue;
+    cursor: pointer;
+
+}
+
+.update i{
+	margin: 15px;
+	font-size: 16px;
+	color: #e6e6e6;
+}
+
+.delete i{
+	margin: 15px;
+	font-size: 16px;
+	color: #e6e6e6;
+}
+
+.dataTables_empty{
+	visibility: hidden;
+}
+
+.dataTables_empty:after{
+	content: "Записів не знайдено" ;
+	visibility: visible;
+	text-align: center;
+	margin-right: 200px;
+	cursor: default;
+}
+
+
+
+
+/*--------------Форма для створення запису---------------------*/
+
+.add-record{
+	cursor: pointer;
+}
+
+.add-column-text{
+	letter-spacing: 2px;
+}
+
+
+.add-record a{
+	letter-spacing: 1px;
+	padding: 1em 2em;
+    position: relative;
+    color: #fff;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    font-weight: 600;
+    border-radius: 8px;
+    background-color: slateblue;
+ }
+
+ .subject-area{
+ 	width: 100%;
+    border-radius: 8px;
+    padding: 15px 15px;
+    resize: none;
+    border: 1px #b3b3b3 solid;
+ }
+
+
+.field .homework-done-date{
+	width: 50%;
+}
+
+
+.homework-radio label{
+	display: flex;
+	align-items: center;
+}
+
+.homework-radio input{
+	    width: 1.15rem;
+    height: 1.15rem;
+    margin-right: 9px;
+}
+
+.homework-radio input[type="radio"]::before{
+	background-color: slateblue;
+}
+
+.homework-radio input[type="radio"] {
+  /* ...existing styles */
+  display: grid;
+  place-content: center;
+}
+
+.homework-radio input[type="radio"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--form-control-color);
+}
+
+.homework-radio input[type="radio"]:checked::before {
+  transform: scale(1);
+}
+
+
+.homework-done-date:after{
+	content: "\f073";
+	position: absolute;
+	color: black;
+
+}
+
+.homework-done{
+	position: relative;
+}
+.homework-done i.fa-solid{
+	    position: absolute;
+    font-size: 18px;
+    color: #cbcbcb;
+    top: 68px;
+    left: 144px;
+}
+
+/*----------------------------------------------------------------------*/
+
+
+.air-datepicker-global-container{
+	z-index: 999;
+}
+
+.login-root{
+	    box-shadow: 0 4px 15px #585858c7;
+}
+
+.column-name-home{
+	margin-bottom: 10px;
+    padding-top: 25px;
+    color: #878787;
+}
+
+
+
+/*------Поле не може бути порожнім----------------*/
+
+
+.input-subject[data-error] .subject-area{
+	border-color: #c92432;
+	color: #c92432;
+	background-color: #fffafa;
+}
+
+
+.input-subject[data-error]::after{
+	content: attr(data-error);
+	font-size: 0.85em;
+	color: #c92432;
+	display: block;
+	margin: 10px 0;
+}
+
+.homework-done[date-error] .homework-done-date{
+	border:1px solid;
+	border-color: #c92432;
+	color: #c92432;
+	background-color: #fffafa;
+}
+
+
+/*.homework-done[date-error]::after{
+	content: attr(date-error);
+	font-size: 0.85em;
+	color: #c92432;
+	margin: 10px 0;
+}
+*/
+.homework-done-date[placeholder]{
+	opacity: 0.5;
+	font-size: 1em;
+	color: #c92432;
+	margin: 10px 0;
+}
+
+
+.air-datepicker.-inline-{
+	display: contents;
+}
+
+.air-datepicker--navigation{
+	padding-top: 20px;
+}
+
+.save-subject-plan{
+	    background-color: rgb(84, 105, 212);
+    box-shadow: rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 12%) 0px 1px 1px 0px, rgb(84 105 212) 0px 0px 0px 1px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(60 66 87 / 8%) 0px 2px 5px 0px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 28px;
+    padding: 8px 16px;
+    width: 100%;
+    min-height: 44px;
+    border: unset;
+    border-radius: 4px;
+    outline-color: rgb(84 105 212 / 0.5);
+}

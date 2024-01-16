@@ -1,0 +1,463 @@
+.transition-fade {
+  transition: 0.4s;
+  opacity: 1;
+}
+
+html.is-animating .transition-fade {
+  opacity: 0;
+}
+
+
+.journal-filters {
+	padding-left: 40px;
+	padding-top: 50px;
+	display: flex;
+	justify-content: space-between;
+	color: rgb(85,83,83);
+	flex-wrap: wrap;
+}
+
+
+
+
+.journal-marks-and-lessons-plan a:hover{
+	background: slateblue;
+	color: white;
+}
+
+#active{
+	background: slateblue;
+	color: white;
+}
+
+
+
+.journal-marks-and-lessons-plan a {
+ padding: 0.3em 0.3em;
+ border: 2px solid slateblue;
+ position: relative;
+ overflow: hidden;
+ background-color: transparent;
+ text-align: center;
+ text-transform: uppercase;
+ font-size: 12px;
+ transition: .3s;
+ z-index: 1;
+ font-family: inherit;
+ color: slateblue;
+ font-weight: 600;
+ border-radius: 8px;
+}
+
+
+.mark-scale .option{
+  background: #fff;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 0 10px;
+  border: 2px solid lightgrey;
+  transition: all 0.3s ease;
+}
+.mark-scale .option .dot{
+  height: 16px;
+  width: 16px;
+  background: #d9d9d9;
+  border-radius: 50%;
+  position: relative;
+}
+.mark-scale .option .dot::before{
+  position: absolute;
+  content: "";
+  top: 3px;
+  left: 4px;
+  width: 8px;
+  height: 9px;
+  background: slateblue;
+  border-radius: 50%;
+  opacity: 0;
+  transform: scale(1.5);
+  transition: all 0.3s ease;
+}
+#option-1 , #option-2{
+  display: none;
+}
+#option-1:checked:checked ~ .option-1,
+#option-2:checked:checked ~ .option-2{
+  border-color: slateblue;
+  background: slateblue;
+}
+#option-1:checked:checked ~ .option-1 .dot,
+#option-2:checked:checked ~ .option-2 .dot{
+  background: #fff;
+}
+#option-1:checked:checked ~ .option-1 .dot::before,
+#option-2:checked:checked ~ .option-2 .dot::before{
+  opacity: 1;
+  transform: scale(1);
+}
+.mark-scale .option span{
+  font-size: 14px;
+  color: #808080;
+      margin-left: 8px;
+}
+#option-1:checked:checked ~ .option-1 span,
+#option-2:checked:checked ~ .option-2 span{
+  color: #fff;
+}
+
+.mark-scale{
+	display: flex;
+}
+
+
+
+.student{
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  border-bottom: 1px solid slateblue;
+  border-top: 1px solid slateblue;
+}
+
+
+.journal-teacher span{
+	margin-left: 7px;
+}
+
+.lessons-date {
+	margin-right: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.fa-solid {
+	font-size: 12px;
+	cursor: pointer;
+
+}
+
+.fa-solid i{
+	margin: 15px;
+}
+
+
+#data{
+	position: relative;
+  width: 100%;
+}
+
+#data thead{
+	    position: sticky;
+    top: 0;
+    z-index: 110;
+}
+
+.sem-and-subject{
+    display: flex;
+    align-items: flex-end;
+}
+
+
+.student{
+	background: white;
+	border-color: white;
+	height: 44px;
+    font-weight: 600;
+    line-height: 18px;
+    min-width: 250px;
+    text-align: left;
+    padding-left: 20px;
+    z-index: 2;
+}
+
+.date-inserted{
+
+	background: slateblue;
+    font-weight: 500;
+    line-height: 16px;
+    min-width: 57.1px;
+    z-index: 10;
+    padding: 0 6px;
+    max-width: 55px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.inserted{
+	background: #FBFBFD;
+    border: 1px solid #DAE3EB;
+    box-sizing: border-box;
+    border-radius: 1px;
+    background-clip: padding-box;
+    position: relative;
+    text-align: center;
+    min-width: 55px;
+    height: 60px;
+
+}
+
+.mark-item:before{
+	content: '\2b';
+	line-height: 25px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	font-weight: 600;
+	transform: translate(-50%,-50%);
+	color: slateblue;
+	font-size: 18px;
+}
+
+.mark-item{
+	position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    opacity: 0;
+	background: #e4e4e4;
+	
+	transition: .4s;
+}
+
+
+.mark-item:hover{
+	opacity: 1;
+}
+
+.table-wrapper{
+	background: white;
+    box-shadow: 2px 2px 10px #7f89a726;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    overflow: auto;
+    max-height: calc(100vh - 280px);
+    margin-left: 40px;
+    margin-top: 25px;
+}
+
+.table-wrapper table{
+	width: 100%;
+
+}
+
+
+.disabled-col{
+  pointer-events: none;
+  opacity: .6;
+}
+
+
+.active-col{
+  display: table-cell;
+}
+
+
+
+/*------------------ Mark-menu-----------------------------*/
+
+.mark-menu {
+  z-index: 9999;
+    max-width: 160px;
+    display: flex;
+    position: fixed;
+    left: 60%;
+    top: 30%;
+}
+.mark-menu-container {
+      display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.small-block{
+      min-width: 86px;
+    padding: 8px;
+    background:#fff;
+    box-shadow: 0 4px 15px #7f89a733;
+    border-radius: 6px;
+    margin-top: 5px;
+}
+
+
+.control-group{
+      display: flex;
+    flex-direction: column;
+
+    position: relative;
+    height: 100%;
+}
+
+.input-container{
+      display: flex;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.checkbox-horizontal{
+font-weight: 500;
+    font-size: var(--font-size-body);
+    line-height: 16px;
+    color: var(--black);
+    height: 25px;
+    display: flex;
+    align-items: center;
+}
+    
+.checkbox-horizontal input[type=checkbox] {
+    width: 18px;
+    height: 18px;
+  }
+
+
+  .presence {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--support-danger-200);
+    margin-left: 8px;
+  }
+
+
+.mark-menu_row {}
+.visited {}
+.scales {
+      position: absolute;
+  background: #fff;
+  border-radius: 9px;
+  margin-top: 48px;
+  box-shadow: 0 0 5px rgba(0,0,0.9,0.1);
+  width: 86px;
+}
+
+
+.scale {
+  
+}
+.active-scale {}
+.mark-numbers {
+   display: flex;
+  padding: 0 10px;
+  align-items: center;
+  cursor: pointer;
+  background: #fff;
+
+}
+.mark {}
+
+.mark-numbers:hover{
+  background: #f2f2f2;
+}
+
+.mark-numbers.btn:hover{
+  background: #fff;
+}
+
+
+.number-mark input[type="text"]{
+  text-align: center;
+  font-size: 16px;
+    line-height: 28px;
+    padding: 8px 16px;
+    margin-left: 6px;
+    width: 85%;
+    min-height: 44px;
+    border: unset;
+    border-radius: 4px;
+    outline-color: rgb(84 105 212 / 0.5);
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                rgba(60, 66, 87, 0.16) 0px 0px 0px 1px, 
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+}
+
+
+.mark-label{
+  margin-bottom: 10px;
+    padding-top: 10px;
+    margin-left: 6px;
+    color: #878787;
+}
+
+.level-label{
+  margin-bottom: 10px;
+    padding-top: 10px;
+    margin-left: 6px;
+    color: #878787;
+}
+
+
+
+.save-mark-btn {
+  margin-top: 8px;
+  margin-bottom: 10px;
+    line-height: 28px;
+    padding: 3px 7px;
+    margin-left: 6px;
+    min-height: 34px;
+    border: unset;
+    border-radius: 4px;
+    background-color: rgb(84, 105, 212);
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                rgba(0, 0, 0, 0.12) 0px 1px 1px 0px, 
+                rgb(84, 105, 212) 0px 0px 0px 1px, 
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                rgba(60, 66, 87, 0.08) 0px 2px 5px 0px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+
+.mark-menu.off{
+  display: none;
+}
+
+
+
+.input-column-name[data-error] .col-name{
+  border-color: #c92432;
+  color: #c92432;
+  background-color: #fffafa;
+}
+
+
+.input-column-name[data-error]::after{
+  content: attr(data-error);
+  font-size: 0.85em;
+  color: #c92432;
+  display: block;
+  margin: 10px 0;
+}
+
+
+#contMenu{
+    position: absolute;
+}
+
+.delete-mark{
+    padding: 6px;
+    border-radius: 5px;
+    border: none;
+    background: #e8aaff;
+    color: #919191;
+}

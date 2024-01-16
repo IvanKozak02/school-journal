@@ -1,0 +1,134 @@
+.type-of-application{
+    min-width: 300px;
+}
+.name-of-status{
+    background: #5abfcd;
+    text-align: center;
+    border-radius: 10px;
+    color: #fff;
+    padding: 7px 0;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.messages{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #fff;
+    cursor: pointer;
+    padding: 15px;
+    position: fixed;
+}
+
+.circle{
+    content: "1";
+    position: absolute;
+    height: 12px;
+    min-width: 12px;
+    z-index: 3;
+    top: 5px;
+    font-size: 10px;
+    background-color: #fff;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 15px;
+    padding: 0 2px;
+    box-sizing: border-box;
+    right: 37%;
+    transform: translate(10px);
+}
+.fa-solid.fa-bell{
+    color: #0a0a0a;
+    font-size: initial;
+}
+.messages-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 8px;
+}
+.note-form-wrap.show {
+    transform: translate(0);
+}
+.note-form-wrap {
+    z-index: 9998;
+    top: 80px;
+    right: 30px;
+    bottom: 10px;
+    position: fixed;
+    width: 290px;
+    background: #F5F6FA;
+    box-shadow: 4px 4px 8px #9cb6c933,-4px -4px 10px #fff,inset 4px 4px 8px #9cb6c91a,inset -4px -4px 10px #fffc;
+    border-radius: 10px;
+    padding: 20px 10px 10px;
+    transform: translate(150%);
+    transition: .4s;
+}
+.note-form-wrap {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    color: #141418;
+    margin-left: 9px;
+    margin-bottom: 11px;
+}
+.note-form-wrap .note-items {
+    overflow-y: auto;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    top: 54px;
+}
+.note-form-wrap .notification {
+    display: flex;
+    flex-direction: row;
+    background: #fff;
+    border-radius: 4px;
+    padding: 10px 14px 5px 12px;
+    position: relative;
+}
+.note-form-wrap .notification:not(:last-of-type) {
+    margin-bottom: 3px;
+}
+
+.note-form-wrap .notification .close {
+    position: absolute;
+    cursor: pointer;
+    top: 5px;
+    right: 5px;
+    width: 10px;
+    height: 10px;
+}
+.note-form-wrap .notification .icon {
+    min-width: 30px;
+    min-height: 30px;
+    border-radius: 50%;
+    margin-right: 15px;
+    position: relative;
+}
+.note-form-wrap .notification .icon img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.note-form-wrap .notification .message {
+    margin-bottom: 2px;
+    cursor: pointer;
+}
+.note-form-wrap .notification .time {
+    font-size: 10px;
+    line-height: 16px;
+    color: #7F89A7;
+}

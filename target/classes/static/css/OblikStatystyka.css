@@ -1,0 +1,30 @@
+.semesters{
+    padding-left: 40px;
+    display: flex;
+    padding-top: 20px;
+}
+
+.semester{
+    margin-right: 5px;
+    padding-left: 5px;
+    width: 18px;
+    height: 16px;
+}
+
+.sem-label{
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #717171;
+}
+
+.countPass{
+    margin-left: 125px;
+    padding: 8px;
+    border-radius: 8px;
+    background: slateblue;
+    color: #fff;
+    border: none;
+    cursor:pointer;
+}

@@ -1,0 +1,98 @@
+.options .class-option,
+.options .subject-option,
+.options .group-option,
+.options .class-option-letter,
+.options .class-option-teacher,
+.options .class-option-user{
+    display: flex;
+    height: 67px;
+    padding: 0 25px;
+    align-items: center;
+    cursor: pointer;
+    background-color: rgb(247 246 255);
+}
+
+
+.options .class-option:hover,
+.options .subject-option:hover,
+.options .group-option:hover,
+.options .class-option-letter:hover,
+.options .class-option-teacher:hover,
+.options .class-option-user:hover{
+    background: #F2F2F2;
+}
+
+
+
+.subject-option .option-text,
+.class-option .option-text,
+.class-option-letter .option-text,
+.class-option-teacher .option-text,
+.class-option-user .option-text{
+    font-size: 18px;
+}
+
+
+
+#class-close-filter,
+#group-close-filter{
+    padding-top: 40px;
+}
+
+
+.save-schedule-plan,
+.save-class,
+.save-user{
+
+    background-color: rgb(84, 105, 212);
+    box-shadow: rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 12%) 0px 1px 1px 0px, rgb(84 105 212) 0px 0px 0px 1px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(60 66 87 / 8%) 0px 2px 5px 0px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 28px;
+    padding: 8px 16px;
+    width: 100%;
+    min-height: 44px;
+    border: unset;
+    border-radius: 4px;
+    outline-color: rgb(84 105 212 / 0.5);
+}
+
+
+.save-schedule-button{
+    padding-top: 100px;
+}
+
+.save-schedule-plan[disabled]{
+    background-color: #a698ff;
+    box-shadow: none;
+
+}
+
+.options .option{
+    background-color: rgb(247 246 255);
+}
+
+.options .option-text{
+    font-size: 16px;
+}
+
+.options .class-option,
+.options .class-option-letter,
+.options .class-option-teacher
+.options .class-option-user{
+    font-size: 16px;
+}
+
+
+.select-menu .select-btn{
+    background-color: rgb(247 246 255);
+    border: 1px solid #d9d9d9;
+}
+
+
+.class-option, .subject-option, .class-option-letter,
+.class-option-teacher{
+    background-color: rgb(242 242 242);
+}

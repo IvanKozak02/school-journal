@@ -1,0 +1,158 @@
+.class{
+    display: flex;
+    justify-content: space-around;
+    background: slateblue;
+    border-radius: 5px;
+    cursor:pointer;
+    margin-bottom: 30px;
+    align-items: center;
+    position: relative;
+    margin-right: 20px;
+}
+
+
+.class-span{
+    display: flex;
+    justify-content: center;
+}
+
+
+.list-of-classes{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+/*.class span:last-child{*/
+/*    color: slateblue;*/
+/*    text-align: center;*/
+/*    font-size: 18px;*/
+/*}*/
+.class-span{
+    padding: 50px;
+    width: 78%;
+}
+
+.delete-class-icons-container{
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0px;
+    font-size: 0px;
+}
+
+.class span{
+    color: #e8e8e8;
+    font-weight: bold;
+}
+
+.classes-container{
+    padding-left: 40px;
+    padding-top: 70px;
+    font-size: 20px;
+    width: 100%;
+}
+
+.class-teacher-name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #e8e8e8;
+}
+
+.count-of-students{
+    display: flex;
+    flex-direction: column;
+    color: #e8e8e8;
+    align-items: center;
+}
+
+.add-new-class{
+    background-color: rgb(84, 105, 212);
+    box-shadow: rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 12%) 0px 1px 1px 0px, rgb(84 105 212) 0px 0px 0px 1px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(60 66 87 / 8%) 0px 2px 5px 0px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 28px;
+    padding: 8px 16px;
+    min-height: 44px;
+    border: unset;
+    border-radius: 4px;
+    outline-color: rgb(84 105 212 / 0.5);
+}
+
+.classes-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+}
+
+
+/*-----------Форма створити новий клас---------*/
+
+
+.class-information{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.modal-inner{
+    background-color: #fff;
+}
+
+#class-menu[data-error] #class-btn{
+    border-color: red;
+    color: red;
+}
+
+#class-menu[data-error]:after{
+    color: red;
+    content: attr(data-error);
+    font-size: 14px;
+    padding-top: 5px;
+    padding-left: 3px;
+}
+
+
+.class-name{
+font-size: 25px;
+
+}
+
+.fa-solid.fa-trash-can{
+    color: #fff;
+    font-size: 16px;
+}
+
+#class-menu-letter[data-error] #class-letter-btn{
+    border-color: red;
+    color: red;
+}
+
+#class-menu-letter[data-error]:after{
+    color: red;
+    content: attr(data-error);
+    font-size: 14px;
+    padding-top: 5px;
+    padding-left: 3px;
+}
+
+#class-menu-teacher[data-error] #class-teacher{
+    border-color: red;
+    color: red;
+}
+
+#class-menu-teacher[data-error]:after{
+    color: red;
+    content: attr(data-error);
+    font-size: 14px;
+    padding-top: 5px;
+    padding-left: 3px;
+}

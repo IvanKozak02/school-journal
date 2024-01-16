@@ -1,0 +1,150 @@
+.student{
+    display: flex;
+}
+
+.add-group{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 50px;
+}
+
+.add-group-btn{
+    margin-right: 10px;
+    padding: 7px 20px;
+    border-radius: 50px;
+    background-color: slateblue;
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+
+.date-inserted{
+    height: 30px;
+    min-width: 88px;
+}
+
+.schedule{
+    min-width: 0;
+    height: 0;
+}
+
+.schedule-table-wrapper{
+    margin: 0 auto;
+}
+
+.student-name{
+    color: #959595;
+    cursor: pointer;
+}
+
+.day-of-week{
+    border: none;
+    background-color: #fff;
+}
+
+.chose-student{
+    width: 18px;
+    height: 18px;
+}
+
+.teacher-row-add{
+    position: sticky;
+    bottom: 0;
+    z-index: 999;
+}
+
+.save-group {
+    font-weight: 600;
+    color: #382b22;
+    text-transform: uppercase;
+    background: #f3f0ff;
+    border: 2px solid #9785b1;
+    border-radius: 0.75em;
+    transition: transform 0.15s;
+    cursor: pointer;
+}
+
+.save-group button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+.save-group[disabled]{
+    background-color: silver;
+}
+
+
+.student-add-remove-form{
+    display: none;
+    background-color: #e8e8e8;
+    position: sticky;
+    bottom: 20px;
+    z-index: 999;
+    /*display: flex;*/
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px auto;
+    width: 35%;
+    border-radius: 8px;
+    padding: 10px;
+    flex-direction: column;
+
+}
+
+.add-student-to-group,
+.remove-student-from-group{
+    margin-right: 10px;
+    padding: 7px 9px;
+    border-radius: 50px;
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+}
+.remove-student-from-group{
+    background-color: red;
+}
+.add-student-to-group{
+    background-color: slateblue;
+}
+
+
+.add-group-checkbox
+{
+    width: 100%;
+    background: #e8e8e8;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+
+.check-label{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    padding-right: 5px;
+}
+
+.add-checkbox{
+    margin-right: 5px;
+    width: 18px;
+    height: 18px;
+}
+
+.fa-solid.fa-square-check{
+    color: #00a600;
+    font-size: 16px;
+
+}

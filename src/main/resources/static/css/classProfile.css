@@ -1,0 +1,285 @@
+.main {
+    margin-top: 2%;
+    font-size: 28px;
+    padding: 0 10px;
+    width: 80%;
+}
+
+.main h2 {
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.main .card {
+    background-color: #fff;
+    border-radius: 18px;
+    box-shadow: 1px 1px 8px 0 grey;
+    height: auto;
+    margin-bottom: 20px;
+    padding: 20px 0 20px 50px;
+}
+
+.main .card table {
+    border: none;
+    font-size: 16px;
+    height: 270px;
+    width: 80%;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 18px;
+    box-shadow: 1px 1px 8px 0 grey;
+    height: auto;
+    margin-bottom: 20px;
+    padding: 20px 0 20px 50px;
+}
+
+.edit {
+    position: absolute;
+    color: #c4c4c4;
+    right: 2%;
+    cursor: pointer;
+}
+
+.social-media {
+    text-align: center;
+    width: 90%;
+}
+
+.social-media span {
+    margin: 0 10px;
+}
+
+.fa-facebook:hover {
+    color: #4267b3 !important;
+}
+
+.fa-twitter:hover {
+    color: #1da1f2 !important;
+}
+
+.fa-instagram:hover {
+    color: #ce2b94 !important;
+}
+
+.fa-invision:hover {
+    color: #f83263 !important;
+}
+
+.fa-github:hover {
+    color: #161414 !important;
+}
+
+.fa-whatsapp:hover {
+    color: #25d366 !important;
+}
+
+.fa-snapchat:hover {
+    color: #fffb01 !important;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+}
+
+
+
+.card-body img{
+    width: 290px;
+    height: 290px;
+    position: absolute;
+    right: 45px;
+    top: 80px;
+}
+
+.tab-header{
+    color: slategray;
+}
+
+.class-info{
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.class-schedule{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 5px;
+    background-color: #9873f5;
+    border-radius: 8px;
+    padding: 20px;
+    color: #ededed;
+    cursor: pointer;
+}
+
+.schedule-text{
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.fa-regular.fa-calendar-days,
+.fa-solid.fa-book,
+.fa-solid.fa-users-line{
+    font-size: 1.5rem;
+}
+
+.class-card-body{
+    padding-top: 50px;
+}
+
+.hrs{
+    width: 100%;
+}
+
+.students-teacher-parents-menu{
+    display: flex;
+
+}
+
+.menu-btn{
+    background: slateblue;
+    border-radius: 50px;
+    display: flex;
+    /* justify-content: center; */
+    padding: 7px 30px;
+    color: #fff;
+    margin-right: 25px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.ui.stackable.grid>div:last-child{
+    z-index: 1010;
+}
+
+.students-container{
+    padding-top: 20px;
+}
+
+.class-info{
+    padding-bottom: 50px;
+}
+
+
+
+#email-container[data-error] #email{
+    color: red;
+    border: 1px solid red;
+}
+
+#email-container[data-error]:after{
+    color: red;
+    content: attr(data-error);
+    font-size: 14px;
+    padding-top: 10px;
+    padding-left: 3px;
+}
+
+#class-menu-teacher[data-error] #class-teacher{
+    border-color: red;
+    color: red;
+}
+
+#class-menu-teacher[data-error]:after{
+    color: red;
+    content: attr(data-error);
+    font-size: 14px;
+    padding-top: 5px;
+    padding-left: 3px;
+}
+
+.students{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.add-user-btn{
+    padding: 9px 20px;
+    border-radius: 50px;
+    border: none;
+    background-color: slateblue;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.fa-solid.fa-user-plus{
+    margin-left: 7px;
+    font-size: 16px;
+
+}
+.add-user{
+    margin-right: 10px;
+}
+
+
+.select-menu-user.active #class-user{
+    display: block;
+}
+
+
+#user-id-container[data-error] #user-id{
+    border: 1px solid red;
+}
+
+#user-id-container[data-error]:after{
+    content: attr(data-error);
+    color: red;
+    padding-top: 7px;
+}
+
+#user-id{
+    margin-bottom: 5px;
+}
+
+.select-menu-user .select-btn{
+
+    height: 125px;
+    background: #fff;
+
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 9px;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    position: relative;
+    overflow: auto;
+    display: none;
+}
+
+.student-btn.show, .teacher-btn.show, .admin-btn.show{
+    background: slateblue;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    padding: 7px 30px;
+    color: #fff;
+    margin-right: 15px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.student-btn, .teacher-btn, .admin-btn{
+    background: #fff;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    padding: 7px 30px;
+    color: grey;
+    margin-right: 15px;
+    font-size: 15px;
+    cursor: pointer;
+}

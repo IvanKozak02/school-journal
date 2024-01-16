@@ -1,0 +1,246 @@
+
+.journal-container {
+  padding-top: 40px;
+  padding-left: 20px;
+}
+
+.select-menu, .select-menu-user {
+  width: 280px;
+  height: 150px auto;
+  position: relative;
+  padding-top: 10px;
+}
+
+
+.select-menu .select-btn
+{
+  display: flex;
+  height: 55px;
+  background: #fff;
+  padding: 25px;
+  font-size: 18px;
+  font-weight: 400;
+  border-radius: 9px;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0,0,0.9,0.1);
+}
+
+.select-btn i{
+  font-size: 18px;
+
+}
+
+.select-menu .options{
+  position: absolute;
+  background: #fff;
+  border-radius: 9px;
+  margin-top: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0.9,0.1);
+  display: none;
+  width: 100%;
+}
+
+.options .option{
+  display: flex;
+  height: 67px;
+  padding: 0 25px;
+  align-items: center;
+  cursor: pointer;
+  background: #fff;
+}
+
+
+.options .option:hover{
+  background: #F2F2F2;
+}
+
+.option .option-text{
+  font-size: 18px;
+}
+
+.select-menu.active .options{
+  display: block;
+}
+
+.select-menu .options{
+  overflow: hidden;
+  overflow-y: scroll;
+  height: 200px;
+}
+
+
+
+
+
+
+
+/* Subject Filter*/
+
+
+.select-menu-subject {
+  width: 280px;
+  height: 150px auto;
+      padding-top: 10px;
+}
+
+
+.select-menu-subject .select-btn-subject{
+  display: flex;
+  height: 55px;
+  background: #fff;
+  padding: 25px;
+  font-size: 18px;
+  font-weight: 400;
+  border-radius: 9px;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0,0,0.9,0.1);
+}
+
+.select-btn-subject i{
+  font-size: 18px;
+
+}
+
+.select-menu-subject .options-subject{
+  position: relative;
+  background: #fff;
+  border-radius: 9px;
+  margin-top: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0.9,0.1);
+  display: none;
+}
+
+.options-subject .option-subject{
+  display: flex;
+  height: 67px;
+  padding: 0 25px;
+  align-items: center;
+  cursor: pointer;
+  background: #fff;
+}
+
+
+.options-subject .option-subject:hover{
+  background: #F2F2F2;
+}
+
+.option-subject .option-text-subject{
+  font-size: 18px;
+}
+
+.select-menu-subject.active .options-subject{
+  display: block;
+}
+
+
+
+.select-menu-subject .options-subject{
+  overflow: hidden;
+  overflow-y: scroll;
+  height: 200px;
+}
+
+
+
+
+
+
+
+
+.journal-table-header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.journal-table-header button{
+      padding: 10px;
+    border-radius: 10px;
+    background: #00c630;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.journal-table{
+  padding: 40px;
+
+}
+
+.journal_row{
+  display: flex;
+  margin-left: 20px; 
+}
+
+.class-filter{
+  margin-right: 100px;
+}
+
+
+
+.journal-table-content{
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  width: 100%;
+}
+
+
+
+.journal-table-content thead tr{
+  background-color: slateblue;
+  color: #fff;
+  text-align: left;
+  font-weight: bold;
+}
+
+.journal-table-content thead tr th{
+  padding: 12px 42px;
+  font-size: 20px;
+}
+
+
+
+.journal-table-content td{
+  padding:12px 15px;
+}
+
+
+.journal-table-content tbody tr{
+  border-bottom: 1px solid #dddddd;
+  background: #e1e1e1;
+}
+
+
+.journal-table-content tbody tr td{
+  font-size: 18px;
+  padding: 20px 55px;
+}
+
+.journal-table-content tbody tr:nth-of-type(even){
+  background-color: #f3f3f3;
+}
+
+.journal-table-content tbody tr:last-of-type{
+  border-bottom: 3px solid slateblue;
+}
+
+
+.journal-table-content td a{
+  margin-right: 20px;
+  background: #0083d4;
+    border-radius: 2px;
+    padding: 7px;
+    color: #fff;
+    font-size: 18px;
+
+}
+
+.classes{
+  margin-bottom: 7px;
+  text-align: center;
+}
